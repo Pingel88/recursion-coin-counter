@@ -12,6 +12,11 @@ describe('coinCounter', () => {
     const change = 0.04;
     expect(coinCounter(change)).toEqual(4);
   });
+
+  test('should return number of nickels', () => {
+    const change = 0.05;
+    expect(coinCounter(change)).toEqual(1);
+  });
 })
 
 
