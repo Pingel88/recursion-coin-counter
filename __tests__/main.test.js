@@ -1,9 +1,14 @@
-import coinCounter from '../src/main.js';
+import {
+  coinCounter
+} from '../src/main.js';
 
-test('try to return a value', () => {
-  const change = 2;
-  expect(coinCounter(change)).toEqual(2);
-});
+describe('coinCounter', () => {
+  test("try to return something", () => {
+    const change = 2;
+    expect(coinCounter(change)).toEqual(2);
+  });
+})
+
 
 // describe('Age', () => {
 //   test('should correctly create an Age object with age and expectancy for male', () => {
