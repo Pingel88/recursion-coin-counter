@@ -1,7 +1,7 @@
 {
-  "name": "react-template",
+  "name": "coin-counter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Takes X amount of money (such as $4.99) and determines the exact amount of change needed in quarters, dimes, nickels and pennies.",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -14,7 +14,7 @@
     "coverageReporters": ["html"]
   },
   "keywords": [],
-  "author": "Mike Pingel",
+  "author": "Mike Pingel, Daniel Adeyemi",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.6.4",
