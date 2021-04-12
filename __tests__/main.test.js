@@ -4,8 +4,8 @@ import {
 
 describe('coinCounter', () => {
   test("try to return something", () => {
-    const change = 2;
-    expect(coinCounter(change)).toEqual(2);
+    const change = 0;
+    expect(coinCounter(change)).toEqual(0);
   });
 })
 
