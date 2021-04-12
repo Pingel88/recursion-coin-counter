@@ -5,12 +5,12 @@ import {
 describe('coinCounter', () => {
   test("try to return something", () => {
     const result = coinCounter(0);
-    expect(result).toEqual('Dimes: 0, Nickels: 0, Pennies: 0');
+    expect(result).toEqual('Quarters: 0, Dimes: 0, Nickels: 0, Pennies: 0');
   });
 
   test('should return the number of pennies', () => {
     const result = coinCounter(0.04);
-    expect(result).toEqual('Dimes: 0, Nickels: 0, Pennies: 4');
+    expect(result).toEqual('Quarters: 0, Dimes: 0, Nickels: 0, Pennies: 4');
   });
 
   test('should return the number of nickels', () => {
@@ -24,7 +24,7 @@ describe('coinCounter', () => {
   });
   test('should return the number of dimes, nickels, and pennies', () => {
     const result = coinCounter(0.19);
-    expect(result).toEqual('Quarters: 0, Dimes: 1, Nickels: 1, Pennies: 4 ');
+    expect(result).toEqual('Quarters: 0, Dimes: 1, Nickels: 1, Pennies: 4');
   });
   test('should return the number of quarters, dimes, nickels, and pennies', () => {
     const result = coinCounter(0.44);
