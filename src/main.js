@@ -4,5 +4,8 @@
 // import './css/styles.css';
 
 export function coinCounter(change) {
-  return change * 100;
+
+  const cents = change * 100;
+  const nickels = cents / 5;
+  return (cents < 5) ? cents : nickels;
 }
