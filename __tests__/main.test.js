@@ -22,4 +22,8 @@ describe('coinCounter', () => {
     const result = coinCounter(0.09);
     expect(result).toEqual('Nickels: 1, Pennies: 4');
   });
+  test('should return the number of dimes', () => {
+    const result = coinCounter(.1);
+    expect(result).toEqual('Dimes: 1, Nickels: 0, Pennies: 0');
+  });
 });
