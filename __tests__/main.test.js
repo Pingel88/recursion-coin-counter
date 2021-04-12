@@ -15,15 +15,19 @@ describe('coinCounter', () => {
 
   test('should return the number of nickels', () => {
     const result = coinCounter(0.05);
-    expect(result).toEqual('Dimes: 0, Nickels: 1, Pennies: 0');
+    expect(result).toEqual('Quarters: 0, Dimes: 0, Nickels: 1, Pennies: 0');
   });
 
   test('should return the number of nickels and pennies', () => {
     const result = coinCounter(0.09);
-    expect(result).toEqual('Dimes: 0, Nickels: 1, Pennies: 4');
+    expect(result).toEqual('Quarters: 0, Dimes: 0, Nickels: 1, Pennies: 4');
   });
   test('should return the number of dimes, nickels, and pennies', () => {
     const result = coinCounter(0.19);
-    expect(result).toEqual('Dimes: 1, Nickels: 1, Pennies: 4');
+    expect(result).toEqual('Quarters: 0, Dimes: 1, Nickels: 1, Pennies: 4 ');
+  });
+  test('should return the number of quarters, dimes, nickels, and pennies', () => {
+    const result = coinCounter(0.44);
+    expect(result).toEqual('Quarters: 1, Dimes: 1, Nickels: 1, Pennies: 4');
   });
 });

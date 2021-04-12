@@ -10,5 +10,5 @@ export function coinCounter(change) {
   const nickels = parseInt(cents % 10 / 5);
   const pennies = cents % 5;
 
-  return `Dimes: ${dimes}, Nickels: ${nickels}, Pennies: ${pennies}`;
+  return `Quarters: 0, Dimes: ${dimes}, Nickels: ${nickels}, Pennies: ${pennies}`;
 }
