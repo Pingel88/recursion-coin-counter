@@ -4,5 +4,5 @@
 // import './css/styles.css';
 
 export function coinCounter(change) {
-  return change;
+  return change * 100;
 }
