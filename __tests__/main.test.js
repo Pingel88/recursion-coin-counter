@@ -21,7 +21,7 @@ describe('coinCounter', () => {
       test('should return the number of nickels and pennies', () => {
         const result = coinCounter(0.09);
         expect(result).toEqual('Nickels: 1, Pennies: 4')
-      })
+      });
 
 
       // describe('Age', () => {
